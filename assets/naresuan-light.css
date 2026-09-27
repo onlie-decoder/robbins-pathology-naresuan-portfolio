@@ -48,3 +48,13 @@ dialog{background:#fffaf5!important;color:#34404b!important;border-color:#d5c5b2
 .btn-copy-code{background:#fff3e2!important;color:#8a501f!important;border-color:#dec3a3!important}.code-copy-box code,.prompt-highlight-box code{color:#5b5145!important}
 .prompt-highlight-box strong{color:#70431f!important}
 @media(min-width:701px) and (max-width:900px){.hero-grid{grid-template-columns:1fr!important}.hero .lead{max-width:100%}.skill-cycle{max-width:360px}.hero .actions{flex-direction:row}}
+/* One field follows the reader and ends on an uncluttered final screen. */
+#elephant-stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main{position:relative;z-index:1;background:transparent}
+.naresuan-finale{position:relative!important;width:100%!important;max-width:none!important;height:100svh!important;min-height:600px;margin:0!important;padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;overflow:visible!important;display:block!important}
+.naresuan-finale .elephant-kicker{position:absolute;left:0;right:0;top:8%;font-size:11px;letter-spacing:4px;text-align:center}
+.naresuan-finale .constellation-stage{position:absolute;inset:17% 3% 7%;width:auto;height:auto;max-width:none;aspect-ratio:auto;margin:0}
+.constellation-stage::after{display:none!important}
+@media(max-width:1100px){.naresuan-finale{height:calc(100svh - 56px)!important;min-height:450px}}
+@media(max-width:649px){.naresuan-finale{height:calc(100svh - 80px)!important;min-height:420px}.naresuan-finale .constellation-stage{inset:14% 1% 8%}.naresuan-finale .elephant-kicker{font-size:10px;letter-spacing:3px}}
+.naresuan-finale{height:100svh!important}.naresuan-finale .elephant-kicker{top:10%}

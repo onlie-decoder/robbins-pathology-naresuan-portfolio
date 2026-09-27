@@ -1,6 +1,7 @@
 /* A daylight palette with orange and silver from the supplied university seal. */
 :root{--bg:#fffaf3;--panel:#fff;--line:#ded8cf;--text:#292f36;--muted:#656c73;--cyan:#b9540b;--purple:#a85c24}
-body{background:#fffaf3!important;color:var(--text);overflow-x:clip}
+html{overflow-x:hidden;overflow-x:clip}
+body{width:100%;min-width:0;background:#fffaf3!important;color:var(--text);overflow-x:hidden;overflow-x:clip}
 body *{text-shadow:none!important}
 main::before,.hero::before{display:none!important}
 .sidebar{background:#fffdf9!important;border-color:#e5dacb!important;box-shadow:3px 0 24px #69533a08!important}

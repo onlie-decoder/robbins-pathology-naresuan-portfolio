@@ -4,7 +4,7 @@
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
   let width=0,height=0,frame=0,previous=0,formation=0,celebrated=false,celebrationStart=-Infinity;
   const points=[],paths=[],clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
-  function resize(){width=innerWidth;height=innerHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
+  function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
   function draw(now){
     const delta=Math.min(64,previous?now-previous:16);previous=now;
     const scroll=scrollY,road=roadmap.getBoundingClientRect(),roadTop=road.top+scroll,roadEnd=road.bottom+scroll;

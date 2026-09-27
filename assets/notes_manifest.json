@@ -1,0 +1,38 @@
+[
+  {
+    "pdf": "pdf/chapter5_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/file/d/1vefgsrTKMzufBWU7moxOEqkQJNiM02ov/view?usp=drivesdk",
+    "drive_filename": "chapter5_pathology_deep_th (1)_260905_092416.pdf",
+    "destination": "chapter_file"
+  },
+  {
+    "pdf": "pdf/chapter6_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/file/d/1t7E26l7Kd5DXWDc6PjMIjWSe6IBGE0ri/view?usp=drivesdk",
+    "drive_filename": "chapter 6 immuse system disease_260806_141415.pdf",
+    "destination": "chapter_file"
+  },
+  {
+    "pdf": "pdf/chapter4_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/file/d/1_K0Iu18bBBRufKG21bO8kCnrZFHquJro/view?usp=drivesdk",
+    "drive_filename": "Ch4 hemodynamic disorder sumary _260808_142801.pdf",
+    "destination": "chapter_file"
+  },
+  {
+    "pdf": "pdf/chapter11_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/drive/folders/1kiDypqpnCjjLHkTr4289C9hQM19JZDoI",
+    "drive_filename": null,
+    "destination": "shared_notes_folder"
+  },
+  {
+    "pdf": "pdf/chapter3_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/file/d/1Bkm8Xv1co3d0uGpNzp28xNjXxTnMuMYe/view?usp=drivesdk",
+    "drive_filename": "chapter3_pathology_deep_th_260907_124906.pdf",
+    "destination": "chapter_file"
+  },
+  {
+    "pdf": "pdf/chapter1_pathology_deep_th.pdf",
+    "note_url": "https://drive.google.com/file/d/1_OrMsbB7TsnXV_hK-xcVpOQOBnav7k2C/view?usp=drivesdk",
+    "drive_filename": "Notes_260805_082227.pdf",
+    "destination": "chapter_file"
+  }
+]

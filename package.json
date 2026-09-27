@@ -1,0 +1,20 @@
+{
+  "name": "html-to-pdf-textbook-skill",
+  "version": "1.0.0",
+  "description": "Always-loaded publication standard skill for compiling HTML-to-PDF textbooks and educational study guides",
+  "bin": {
+    "html-to-pdf-skill": "./bin/install.js"
+  },
+  "scripts": {
+    "start": "node ./bin/install.js"
+  },
+  "keywords": [
+    "ai-agent",
+    "skill",
+    "html-to-pdf",
+    "textbook",
+    "playwright"
+  ],
+  "author": "onlie-decoder",
+  "license": "MIT"
+}

@@ -1,0 +1,1134 @@
+{
+  "chapter": 6,
+  "title": "Neoplasia",
+  "source_pdf": "G:\\03_Textbooks_and_Curriculum\\Robbins_Pathology_Chapters\\06 - Neoplasia.pdf",
+  "total_figures": 37,
+  "total_panels": 51,
+  "dpi": 200,
+  "figures": {
+    "6.1": {
+      "figure_number": "Figure 6.1",
+      "key": "6.1",
+      "source_pdf_page_index": 2,
+      "printed_page": 191,
+      "crop_coordinates_pt": [
+        78.0,
+        53.0,
+        282.0,
+        344.0
+      ],
+      "title": "Colonic polyp (adenoma)",
+      "caption": "Fig. 6.1 Colonic polyp. This glandular neoplasm (adenoma) is projecting into the colonic lumen and is attached to the mucosa by a distinct stalk.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "gross_pathology",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_1.png",
+      "asset_rel_path": "assets\\fig_6_1.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_1.png",
+      "dimensions_px": {
+        "width": 568,
+        "height": 809
+      },
+      "aspect_ratio": 0.702,
+      "file_size_bytes": 149530
+    },
+    "6.2": {
+      "figure_number": "Figure 6.2",
+      "key": "6.2",
+      "source_pdf_page_index": 2,
+      "printed_page": 191,
+      "crop_coordinates_pt": [
+        320.0,
+        504.0,
+        568.0,
+        692.0
+      ],
+      "title": "Mixed tumor of parotid gland (pleomorphic adenoma)",
+      "caption": "Fig. 6.2 Mixed tumor of the parotid gland containing epithelial cells forming ducts and matrix resembling cartilage. (Courtesy of Dr. Arlene Perez, Department of Pathology, Brigham and Women's Hospital, Boston, Mass.)",
+      "credit": "(Courtesy of Dr. Arlene Perez, Department of Pathology, Brigham and Women's Hospital, Boston, Mass.)",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_2.png",
+      "asset_rel_path": "assets\\fig_6_2.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_2.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 523
+      },
+      "aspect_ratio": 1.319,
+      "file_size_bytes": 157414
+    },
+    "6.3": {
+      "figure_number": "Figure 6.3",
+      "key": "6.3",
+      "source_pdf_page_index": 4,
+      "printed_page": 193,
+      "crop_coordinates_pt": [
+        56.0,
+        53.0,
+        304.0,
+        215.0
+      ],
+      "title": "Well-differentiated squamous cell carcinoma",
+      "caption": "Fig. 6.3 Well-differentiated squamous cell carcinoma of the skin. The tumor cells are strikingly similar to normal squamous epithelial cells, with intercellular bridges and prominent 'pearls' of keratin (arrow).",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_3.png",
+      "asset_rel_path": "assets\\fig_6_3.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_3.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 451
+      },
+      "aspect_ratio": 1.53,
+      "file_size_bytes": 137402
+    },
+    "6.4": {
+      "figure_number": "Figure 6.4",
+      "key": "6.4",
+      "source_pdf_page_index": 4,
+      "printed_page": 193,
+      "crop_coordinates_pt": [
+        320.0,
+        53.0,
+        568.0,
+        208.0
+      ],
+      "title": "Pleomorphic malignant tumor (rhabdomyosarcoma)",
+      "caption": "Fig. 6.4 Pleomorphic malignant tumor (rhabdomyosarcoma). The tumor cells are marked by wide variation in cell and nuclear size and shape, hyperchromatic prominent dark nuclei, and bizarre giant cells.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_4.png",
+      "asset_rel_path": "assets\\fig_6_4.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_4.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 431
+      },
+      "aspect_ratio": 1.601,
+      "file_size_bytes": 133739
+    },
+    "6.5": {
+      "figure_number": "Figure 6.5",
+      "key": "6.5",
+      "source_pdf_page_index": 4,
+      "printed_page": 193,
+      "crop_coordinates_pt": [
+        320.0,
+        535.0,
+        568.0,
+        701.0
+      ],
+      "title": "High-power detailed view of anaplastic tumor with atypical mitoses",
+      "caption": "Fig. 6.5 High-power detailed view of an anaplastic tumor showing marked cellular and nuclear pleomorphism, hyperchromatism, and an abnormal tripolar mitotic figure.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_5.png",
+      "asset_rel_path": "assets\\fig_6_5.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_5.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 462
+      },
+      "aspect_ratio": 1.494,
+      "file_size_bytes": 143212
+    },
+    "6.6": {
+      "figure_number": "Figure 6.6",
+      "key": "6.6",
+      "source_pdf_page_index": 5,
+      "printed_page": 194,
+      "crop_coordinates_pt": [
+        50.0,
+        53.0,
+        552.0,
+        218.0
+      ],
+      "title": "Carcinoma in situ of the uterine cervix",
+      "caption": "Fig. 6.6 Carcinoma in situ. (A) Low-power view shows that the entire thickness of the epithelium is replaced by atypical, dysplastic cells. There is no invasion of the underlying stroma. (B) High-power view demonstrating cellular atypia, hyperchromatism, and loss of normal architectural maturation.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "composite_micrograph",
+      "layout_classification": "full_width_2panel",
+      "asset_filename": "fig_6_6.png",
+      "asset_rel_path": "assets\\fig_6_6.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_6.png",
+      "dimensions_px": {
+        "width": 1396,
+        "height": 459
+      },
+      "aspect_ratio": 3.041,
+      "file_size_bytes": 281362
+    },
+    "6.7": {
+      "figure_number": "Figure 6.7",
+      "key": "6.7",
+      "source_pdf_page_index": 5,
+      "printed_page": 194,
+      "crop_coordinates_pt": [
+        308.0,
+        283.0,
+        556.0,
+        440.0
+      ],
+      "title": "Fibroadenoma of the breast (gross)",
+      "caption": "Fig. 6.7 Fibroadenoma of the breast. The tan-colored, encapsulated, sharply demarcated benign tumor is clearly distinct from the surrounding breast tissue.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "gross_pathology",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_7.png",
+      "asset_rel_path": "assets\\fig_6_7.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_7.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 437
+      },
+      "aspect_ratio": 1.579,
+      "file_size_bytes": 68263
+    },
+    "6.8": {
+      "figure_number": "Figure 6.8",
+      "key": "6.8",
+      "source_pdf_page_index": 5,
+      "printed_page": 194,
+      "crop_coordinates_pt": [
+        308.0,
+        523.0,
+        556.0,
+        692.0
+      ],
+      "title": "Fibroadenoma of the breast (microscopic)",
+      "caption": "Fig. 6.8 Microscopic view of fibroadenoma of the breast seen in Fig. 6.7. Note the fibrous capsule separating the tumor from the surrounding normal breast parenchyma.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_8.png",
+      "asset_rel_path": "assets\\fig_6_8.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_8.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 471
+      },
+      "aspect_ratio": 1.465,
+      "file_size_bytes": 134074
+    },
+    "6.9": {
+      "figure_number": "Figure 6.9",
+      "key": "6.9",
+      "source_pdf_page_index": 6,
+      "printed_page": 195,
+      "crop_coordinates_pt": [
+        56.0,
+        53.0,
+        304.0,
+        231.0
+      ],
+      "title": "Invasive ductal carcinoma of the breast (gross)",
+      "caption": "Fig. 6.9 Cut section of invasive ductal carcinoma of the breast. The lesion is infiltrative, retracting the nipple, and lacks a well-defined border or capsule.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "gross_pathology",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_9.png",
+      "asset_rel_path": "assets\\fig_6_9.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_9.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 495
+      },
+      "aspect_ratio": 1.394,
+      "file_size_bytes": 111880
+    },
+    "6.10": {
+      "figure_number": "Figure 6.10",
+      "key": "6.10",
+      "source_pdf_page_index": 6,
+      "printed_page": 195,
+      "crop_coordinates_pt": [
+        350.0,
+        53.0,
+        538.0,
+        235.0
+      ],
+      "title": "Microscopic view of breast carcinoma showing infiltrative margin",
+      "caption": "Fig. 6.10 Microscopic view of breast carcinoma seen in Fig. 6.9. Note the absence of a well-defined capsule and invasion into surrounding adipose tissue.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "micrograph",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_10.png",
+      "asset_rel_path": "assets\\fig_6_10.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_10.png",
+      "dimensions_px": {
+        "width": 523,
+        "height": 506
+      },
+      "aspect_ratio": 1.034,
+      "file_size_bytes": 91403
+    },
+    "6.11": {
+      "figure_number": "Figure 6.11",
+      "key": "6.11",
+      "source_pdf_page_index": 6,
+      "printed_page": 195,
+      "crop_coordinates_pt": [
+        320.0,
+        555.0,
+        568.0,
+        720.0
+      ],
+      "title": "Liver studded with metastatic cancer",
+      "caption": "Fig. 6.11 A liver studded with metastatic cancer. Multiple rounded nodules of varying sizes are scattered throughout the hepatic parenchyma.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "gross_pathology",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_11.png",
+      "asset_rel_path": "assets\\fig_6_11.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_11.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 459
+      },
+      "aspect_ratio": 1.503,
+      "file_size_bytes": 112430
+    },
+    "6.12": {
+      "figure_number": "Figure 6.12",
+      "key": "6.12",
+      "source_pdf_page_index": 8,
+      "printed_page": 197,
+      "crop_coordinates_pt": [
+        80.0,
+        48.0,
+        538.0,
+        339.0
+      ],
+      "title": "Comparison of benign leiomyoma vs malignant leiomyosarcoma",
+      "caption": "Fig. 6.12 Comparison between a benign tumor of the myometrium (leiomyoma) and a malignant tumor of similar origin (leiomyosarcoma).",
+      "credit": "",
+      "panels": [
+        "Central Uterine Anatomy",
+        "Benign Leiomyoma (Gross & Schematic Histology Inset)",
+        "Malignant Leiomyosarcoma (Gross & Schematic Histology Inset)"
+      ],
+      "panel_count": 3,
+      "type": "comparative_diagram",
+      "layout_classification": "full_width_diagram",
+      "asset_filename": "fig_6_12.png",
+      "asset_rel_path": "assets\\fig_6_12.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_12.png",
+      "dimensions_px": {
+        "width": 1273,
+        "height": 809
+      },
+      "aspect_ratio": 1.574,
+      "file_size_bytes": 330006
+    },
+    "6.13": {
+      "figure_number": "Figure 6.13",
+      "key": "6.13",
+      "source_pdf_page_index": 9,
+      "printed_page": 198,
+      "crop_coordinates_pt": [
+        46.0,
+        52.0,
+        554.0,
+        298.0
+      ],
+      "title": "Estimated cancer incidence and mortality by site and sex",
+      "caption": "Fig. 6.13 Estimated cancer incidence and mortality by site and sex in the United States. Excludes basal cell and squamous cell skin cancers and carcinoma in situ. (From Siegel RL, Miller KD, Jemal A: Cancer statistics, 2016. CA Cancer J Clin 66:7, 2016.)",
+      "credit": "(From Siegel RL, Miller KD, Jemal A: Cancer statistics, 2016. CA Cancer J Clin 66:7, 2016.)",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "statistical_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_13.png",
+      "asset_rel_path": "assets\\fig_6_13.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_13.png",
+      "dimensions_px": {
+        "width": 1412,
+        "height": 684
+      },
+      "aspect_ratio": 2.064,
+      "file_size_bytes": 203124
+    },
+    "6.14": {
+      "figure_number": "Figure 6.14",
+      "key": "6.14",
+      "source_pdf_page_index": 13,
+      "printed_page": 202,
+      "crop_coordinates_pt": [
+        44.0,
+        300.0,
+        294.0,
+        712.0
+      ],
+      "title": "Chromosomal translocations and associated oncogenes (CML and Burkitt lymphoma)",
+      "caption": "Fig. 6.14 The chromosomal translocations and associated oncogenes in chronic myelogenous leukemia and Burkitt lymphoma.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "molecular_diagram",
+      "layout_classification": "single_col_tall",
+      "asset_filename": "fig_6_14.png",
+      "asset_rel_path": "assets\\fig_6_14.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_14.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 1145
+      },
+      "aspect_ratio": 0.607,
+      "file_size_bytes": 135492
+    },
+    "6.15": {
+      "figure_number": "Figure 6.15",
+      "key": "6.15",
+      "source_pdf_page_index": 14,
+      "printed_page": 203,
+      "crop_coordinates_pt": [
+        320.0,
+        52.0,
+        569.0,
+        293.0
+      ],
+      "title": "Amplification of the NMYC gene in human neuroblastoma",
+      "caption": "Fig. 6.15 Amplification of the NMYC gene in human neuroblastoma. The NMYC gene, present normally on chromosome 2p, becomes amplified and is seen either as homogeneously staining regions (HSRs) or as double minutes.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "molecular_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_15.png",
+      "asset_rel_path": "assets\\fig_6_15.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_15.png",
+      "dimensions_px": {
+        "width": 693,
+        "height": 670
+      },
+      "aspect_ratio": 1.034,
+      "file_size_bytes": 58380
+    },
+    "6.16": {
+      "figure_number": "Figure 6.16",
+      "key": "6.16",
+      "source_pdf_page_index": 16,
+      "printed_page": 205,
+      "crop_coordinates_pt": [
+        57.0,
+        50.0,
+        569.0,
+        218.0
+      ],
+      "title": "Stepwise accumulation of complementary driver mutations",
+      "caption": "Fig. 6.16 Development of cancer through stepwise accumulation of complementary driver mutations. The order in which various driver mutations appear can vary across tumors.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "pathway_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_16.png",
+      "asset_rel_path": "assets\\fig_6_16.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_16.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 468
+      },
+      "aspect_ratio": 3.041,
+      "file_size_bytes": 79577
+    },
+    "6.17": {
+      "figure_number": "Figure 6.17",
+      "key": "6.17",
+      "source_pdf_page_index": 16,
+      "printed_page": 205,
+      "crop_coordinates_pt": [
+        56.0,
+        492.0,
+        306.0,
+        684.0
+      ],
+      "title": "Eight cancer hallmarks and two enabling factors",
+      "caption": "Fig. 6.17 Eight cancer hallmarks and two enabling factors (genomic instability and tumor-promoting inflammation). Most cancer cells acquire these properties during their development.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "hallmark_wheel_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_17.png",
+      "asset_rel_path": "assets\\fig_6_17.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_17.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 534
+      },
+      "aspect_ratio": 1.301,
+      "file_size_bytes": 103349
+    },
+    "6.18": {
+      "figure_number": "Figure 6.18",
+      "key": "6.18",
+      "source_pdf_page_index": 17,
+      "printed_page": 206,
+      "crop_coordinates_pt": [
+        308.0,
+        318.0,
+        558.0,
+        674.0
+      ],
+      "title": "Model for action of RAS and downstream signaling",
+      "caption": "Fig. 6.18 Model for action of RAS. When a normal cell is stimulated through a growth factor receptor, inactive (GDP-bound) RAS is activated to a GTP-bound state, initiating MAPK signaling.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "molecular_diagram",
+      "layout_classification": "single_col_tall",
+      "asset_filename": "fig_6_18.png",
+      "asset_rel_path": "assets\\fig_6_18.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_18.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 990
+      },
+      "aspect_ratio": 0.702,
+      "file_size_bytes": 138721
+    },
+    "6.19": {
+      "figure_number": "Figure 6.19",
+      "key": "6.19",
+      "source_pdf_page_index": 20,
+      "printed_page": 209,
+      "crop_coordinates_pt": [
+        57.0,
+        330.0,
+        569.0,
+        703.0
+      ],
+      "title": "Pathogenesis of retinoblastoma (Knudson two-hit hypothesis)",
+      "caption": "Fig. 6.19 Pathogenesis of retinoblastoma. Two mutations of the RB chromosomal locus on 13q14 lead to neoplastic proliferation of the retinal cells.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "genetic_pathway_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_19.png",
+      "asset_rel_path": "assets\\fig_6_19.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_19.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 1037
+      },
+      "aspect_ratio": 1.372,
+      "file_size_bytes": 222122
+    },
+    "6.20": {
+      "figure_number": "Figure 6.20",
+      "key": "6.20",
+      "source_pdf_page_index": 21,
+      "printed_page": 210,
+      "crop_coordinates_pt": [
+        309.0,
+        52.0,
+        557.0,
+        428.0
+      ],
+      "title": "The role of RB in regulating the G1-S checkpoint of the cell cycle",
+      "caption": "Fig. 6.20 The role of RB in regulating the G1–S checkpoint of the cell cycle. Hypophosphorylated RB in complex with E2F transcription factors acts as a transcriptional repressor; hyperphosphorylation relieves this brake.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "cell_cycle_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_20.png",
+      "asset_rel_path": "assets\\fig_6_20.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_20.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 1045
+      },
+      "aspect_ratio": 0.66,
+      "file_size_bytes": 139480
+    },
+    "6.21": {
+      "figure_number": "Figure 6.21",
+      "key": "6.21",
+      "source_pdf_page_index": 23,
+      "printed_page": 212,
+      "crop_coordinates_pt": [
+        45.0,
+        52.0,
+        557.0,
+        463.0
+      ],
+      "title": "The role of p53 in maintaining genome integrity",
+      "caption": "Fig. 6.21 The role of p53 in maintaining the integrity of the genome. Activation of normal p53 by DNA-damaging agents leads to cell cycle arrest (quiescence), DNA repair, or apoptosis (senescence/death).",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "p53_guardian_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_21.png",
+      "asset_rel_path": "assets\\fig_6_21.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_21.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 1143
+      },
+      "aspect_ratio": 1.245,
+      "file_size_bytes": 288151
+    },
+    "6.22": {
+      "figure_number": "Figure 6.22",
+      "key": "6.22",
+      "source_pdf_page_index": 25,
+      "printed_page": 214,
+      "crop_coordinates_pt": [
+        45.0,
+        52.0,
+        557.0,
+        335.0
+      ],
+      "title": "The role of APC in regulating beta-catenin and WNT signaling",
+      "caption": "Fig. 6.22 The role of APC in regulating the stability and function of β-catenin. APC and β-catenin are components of the WNT signaling pathway. In quiescent cells, APC causes degradation of β-catenin.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "wnt_apc_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_22.png",
+      "asset_rel_path": "assets\\fig_6_22.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_22.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 787
+      },
+      "aspect_ratio": 1.808,
+      "file_size_bytes": 251238
+    },
+    "6.23": {
+      "figure_number": "Figure 6.23",
+      "key": "6.23",
+      "source_pdf_page_index": 26,
+      "printed_page": 215,
+      "crop_coordinates_pt": [
+        57.0,
+        390.0,
+        569.0,
+        693.0
+      ],
+      "title": "Metabolism and cell growth: Warburg effect (aerobic glycolysis)",
+      "caption": "Fig. 6.23 Metabolism and cell growth. Quiescent cells rely mainly on the Krebs cycle for ATP production. Cancer cells upregulate aerobic glycolysis (the Warburg effect) to provide metabolic intermediates for biomass assembly.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "metabolism_warburg_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_23.png",
+      "asset_rel_path": "assets\\fig_6_23.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_23.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 842
+      },
+      "aspect_ratio": 1.69,
+      "file_size_bytes": 177110
+    },
+    "6.24": {
+      "figure_number": "Figure 6.24",
+      "key": "6.24",
+      "source_pdf_page_index": 27,
+      "printed_page": 216,
+      "crop_coordinates_pt": [
+        309.0,
+        452.0,
+        557.0,
+        712.0
+      ],
+      "title": "Proposed action of oncometabolite 2-HG in IDH-mutated cancers",
+      "caption": "Fig. 6.24 Proposed action of the oncometabolite 2-hydroxyglutarate (2-HG) in cancer cells with mutated isocitrate dehydrogenase (mIDH). 2-HG inhibits enzymes that regulate DNA methylation.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "oncometabolite_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_24.png",
+      "asset_rel_path": "assets\\fig_6_24.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_24.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 723
+      },
+      "aspect_ratio": 0.954,
+      "file_size_bytes": 63265
+    },
+    "6.25": {
+      "figure_number": "Figure 6.25",
+      "key": "6.25",
+      "source_pdf_page_index": 28,
+      "printed_page": 217,
+      "crop_coordinates_pt": [
+        320.0,
+        394.0,
+        570.0,
+        683.0
+      ],
+      "title": "Intrinsic pathway of apoptosis and evasion mechanisms in cancer",
+      "caption": "Fig. 6.25 Intrinsic pathway of apoptosis and major mechanisms used by tumor cells to evade cell death. (1) Loss of p53; (2) Overexpression of anti-apoptotic BCL2 family members.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "apoptosis_pathway_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_25.png",
+      "asset_rel_path": "assets\\fig_6_25.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_25.png",
+      "dimensions_px": {
+        "width": 696,
+        "height": 804
+      },
+      "aspect_ratio": 0.866,
+      "file_size_bytes": 130278
+    },
+    "6.26": {
+      "figure_number": "Figure 6.26",
+      "key": "6.26",
+      "source_pdf_page_index": 30,
+      "printed_page": 219,
+      "crop_coordinates_pt": [
+        57.0,
+        52.0,
+        569.0,
+        338.0
+      ],
+      "title": "Telomere shortening, crisis, and bridge-fusion-breakage cycle",
+      "caption": "Fig. 6.26 Escape of cells from replicative senescence and mitotic catastrophe caused by telomere shortening, leading to reactivated telomerase in human carcinoma.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "telomere_crisis_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_26.png",
+      "asset_rel_path": "assets\\fig_6_26.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_26.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 795
+      },
+      "aspect_ratio": 1.79,
+      "file_size_bytes": 206413
+    },
+    "6.27": {
+      "figure_number": "Figure 6.27",
+      "key": "6.27",
+      "source_pdf_page_index": 32,
+      "printed_page": 221,
+      "crop_coordinates_pt": [
+        57.0,
+        52.0,
+        305.0,
+        582.0
+      ],
+      "title": "The metastatic cascade: sequential steps in hematogenous tumor spread",
+      "caption": "Fig. 6.27 The metastatic cascade: The sequential steps involved in the hematogenous spread of a tumor.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "metastatic_cascade_diagram",
+      "layout_classification": "single_col_tall",
+      "asset_filename": "fig_6_27.png",
+      "asset_rel_path": "assets\\fig_6_27.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_27.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 1473
+      },
+      "aspect_ratio": 0.468,
+      "file_size_bytes": 287141
+    },
+    "6.28": {
+      "figure_number": "Figure 6.28",
+      "key": "6.28",
+      "source_pdf_page_index": 32,
+      "printed_page": 221,
+      "crop_coordinates_pt": [
+        320.0,
+        138.0,
+        569.0,
+        674.0
+      ],
+      "title": "Invasion of epithelial basement membranes by tumor cells",
+      "caption": "Fig. 6.28 Sequence of events in the invasion of epithelial basement membranes by tumor cells: (A) Loosening of intercellular junctions; (B) Degradation of ECM; (C) Migration and invasion.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "panel_count": 3,
+      "type": "ecm_invasion_diagram",
+      "layout_classification": "single_col_tall",
+      "asset_filename": "fig_6_28.png",
+      "asset_rel_path": "assets\\fig_6_28.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_28.png",
+      "dimensions_px": {
+        "width": 693,
+        "height": 1490
+      },
+      "aspect_ratio": 0.465,
+      "file_size_bytes": 388579
+    },
+    "6.29": {
+      "figure_number": "Figure 6.29",
+      "key": "6.29",
+      "source_pdf_page_index": 36,
+      "printed_page": 225,
+      "crop_coordinates_pt": [
+        57.0,
+        78.0,
+        305.0,
+        440.0
+      ],
+      "title": "Cross-presentation of tumor antigens and CD8+ T cell response",
+      "caption": "Fig. 6.29 Cross-presentation of tumor antigens and induction of CD8+ cytotoxic T cell antitumor response. (Modified from Abbas AK, Lichtman AH, Pillai S: Cellular and Molecular Immunology, ed 8. Philadelphia, Elsevier, 2015.)",
+      "credit": "(Modified from Abbas AK, Lichtman AH, Pillai S: Cellular and Molecular Immunology, ed 8. Philadelphia, Elsevier, 2015.)",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "immune_crosspresentation_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_29.png",
+      "asset_rel_path": "assets\\fig_6_29.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_29.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 1007
+      },
+      "aspect_ratio": 0.685,
+      "file_size_bytes": 288250
+    },
+    "6.30": {
+      "figure_number": "Figure 6.30",
+      "key": "6.30",
+      "source_pdf_page_index": 37,
+      "printed_page": 226,
+      "crop_coordinates_pt": [
+        45.0,
+        52.0,
+        558.0,
+        382.0
+      ],
+      "title": "Activation of host antitumor immunity by checkpoint inhibitors",
+      "caption": "Fig. 6.30 Activation of host antitumor immunity by checkpoint inhibitors. (A) Blockade of the CTLA4 surface molecule with an inhibitor antibody removes inhibitory signals to cytotoxic T cells. (B) Blockade of PD-1 / PD-L1 interaction restores T-cell antitumor cytotoxic activity.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "checkpoint_inhibitor_diagram",
+      "layout_classification": "full_width_2panel",
+      "asset_filename": "fig_6_30.png",
+      "asset_rel_path": "assets\\fig_6_30.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_30.png",
+      "dimensions_px": {
+        "width": 1425,
+        "height": 918
+      },
+      "aspect_ratio": 1.552,
+      "file_size_bytes": 306689
+    },
+    "6.31": {
+      "figure_number": "Figure 6.31",
+      "key": "6.31",
+      "source_pdf_page_index": 40,
+      "printed_page": 229,
+      "crop_coordinates_pt": [
+        57.0,
+        52.0,
+        569.0,
+        268.0
+      ],
+      "title": "Therapeutic targeting of the hallmarks of cancer",
+      "caption": "Fig. 6.31 Therapeutic targeting of the hallmarks of cancer. (From Hanahan D, Weinberg RA: The hallmarks of cancer: the next generation. Cell 144:646, 2011.)",
+      "credit": "(From Hanahan D, Weinberg RA: The hallmarks of cancer: the next generation. Cell 144:646, 2011.)",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "hallmark_therapeutics_diagram",
+      "layout_classification": "full_width",
+      "asset_filename": "fig_6_31.png",
+      "asset_rel_path": "assets\\fig_6_31.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_31.png",
+      "dimensions_px": {
+        "width": 1423,
+        "height": 601
+      },
+      "aspect_ratio": 2.368,
+      "file_size_bytes": 170675
+    },
+    "6.32": {
+      "figure_number": "Figure 6.32",
+      "key": "6.32",
+      "source_pdf_page_index": 41,
+      "printed_page": 230,
+      "crop_coordinates_pt": [
+        308.0,
+        52.0,
+        558.0,
+        380.0
+      ],
+      "title": "General schema of events in chemical carcinogenesis",
+      "caption": "Fig. 6.32 General schema of events in chemical carcinogenesis. Note that promoters cause clonal expansion of the initiated cell, thus producing a preneoplastic clone.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "chemical_carcinogenesis_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_32.png",
+      "asset_rel_path": "assets\\fig_6_32.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_32.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 912
+      },
+      "aspect_ratio": 0.762,
+      "file_size_bytes": 95655
+    },
+    "6.33": {
+      "figure_number": "Figure 6.33",
+      "key": "6.33",
+      "source_pdf_page_index": 43,
+      "printed_page": 232,
+      "crop_coordinates_pt": [
+        308.0,
+        52.0,
+        558.0,
+        236.0
+      ],
+      "title": "Transforming effects of HPV E6 and E7 proteins",
+      "caption": "Fig. 6.33 Transforming effects of HPV E6 and E7 proteins. The net effect is to immortalize cells and remove restraints on cell proliferation by binding and degrading p53 and RB.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "hpv_e6_e7_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_33.png",
+      "asset_rel_path": "assets\\fig_6_33.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_33.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 512
+      },
+      "aspect_ratio": 1.357,
+      "file_size_bytes": 72628
+    },
+    "6.34": {
+      "figure_number": "Figure 6.34",
+      "key": "6.34",
+      "source_pdf_page_index": 44,
+      "printed_page": 233,
+      "crop_coordinates_pt": [
+        320.0,
+        360.0,
+        570.0,
+        622.0
+      ],
+      "title": "Evolution of EBV-induced Burkitt lymphoma",
+      "caption": "Fig. 6.34 Possible evolution of EBV-induced Burkitt lymphoma. Latent infection leads to polyclonal B-cell expansion, acquisition of t(8;14) translocation, and MYC activation.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "ebv_burkitt_diagram",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_34.png",
+      "asset_rel_path": "assets\\fig_6_34.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_34.png",
+      "dimensions_px": {
+        "width": 696,
+        "height": 728
+      },
+      "aspect_ratio": 0.956,
+      "file_size_bytes": 179662
+    },
+    "6.35": {
+      "figure_number": "Figure 6.35",
+      "key": "6.35",
+      "source_pdf_page_index": 49,
+      "printed_page": 238,
+      "crop_coordinates_pt": [
+        308.0,
+        53.0,
+        556.0,
+        384.0
+      ],
+      "title": "Papanicolaou (Pap) smear of the uterine cervix: normal vs abnormal",
+      "caption": "Fig. 6.35 (A) Normal Papanicolaou smear from the uterine cervix. Large, flat cells with small nuclei are typical. (B) Abnormal smear containing undifferentiated cervical cancer cells with large, hyperchromatic, pleomorphic nuclei.",
+      "credit": "",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "panel_count": 2,
+      "type": "pap_smear_cytology",
+      "layout_classification": "single_col_2panel",
+      "asset_filename": "fig_6_35.png",
+      "asset_rel_path": "assets\\fig_6_35.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_35.png",
+      "dimensions_px": {
+        "width": 690,
+        "height": 920
+      },
+      "aspect_ratio": 0.75,
+      "file_size_bytes": 241706
+    },
+    "6.36": {
+      "figure_number": "Figure 6.36",
+      "key": "6.36",
+      "source_pdf_page_index": 51,
+      "printed_page": 240,
+      "crop_coordinates_pt": [
+        108.0,
+        52.0,
+        492.0,
+        278.0
+      ],
+      "title": "Diverse tumor types sharing BRAF V600E mutation",
+      "caption": "Fig. 6.36 Diverse tumor types that share a common mutation, BRAF (V600E), may be candidates for treatment with the same BRAF inhibitors.",
+      "credit": "",
+      "panels": [
+        "Melanoma",
+        "Papillary thyroid carcinoma",
+        "Hairy cell leukemia",
+        "Colon adenocarcinoma",
+        "Langerhans cell histiocytosis"
+      ],
+      "panel_count": 5,
+      "type": "braf_mutation_composite",
+      "layout_classification": "full_width_5panel",
+      "asset_filename": "fig_6_36.png",
+      "asset_rel_path": "assets\\fig_6_36.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_36.png",
+      "dimensions_px": {
+        "width": 1067,
+        "height": 629
+      },
+      "aspect_ratio": 1.696,
+      "file_size_bytes": 268594
+    },
+    "6.37": {
+      "figure_number": "Figure 6.37",
+      "key": "6.37",
+      "source_pdf_page_index": 52,
+      "printed_page": 241,
+      "crop_coordinates_pt": [
+        56.0,
+        52.0,
+        306.0,
+        360.0
+      ],
+      "title": "Genetic analysis of cancers for targeted therapy pipeline",
+      "caption": "Fig. 6.37 Genetic analysis of cancers is being utilized to identify mutations that can be targeted by drugs. In this workflow, targeted sequencing identifies actionable alterations.",
+      "credit": "",
+      "panels": [
+        "A"
+      ],
+      "panel_count": 1,
+      "type": "targeted_therapy_pipeline",
+      "layout_classification": "single_col",
+      "asset_filename": "fig_6_37.png",
+      "asset_rel_path": "assets\\fig_6_37.png",
+      "asset_abs_path": "G:\\Robbins_Pathology_Summaries\\output\\pdf\\neoplasia_complete\\assets\\fig_6_37.png",
+      "dimensions_px": {
+        "width": 695,
+        "height": 856
+      },
+      "aspect_ratio": 0.812,
+      "file_size_bytes": 288372
+    }
+  }
+}

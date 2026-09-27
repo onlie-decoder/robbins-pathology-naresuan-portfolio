@@ -1,0 +1,92 @@
+[
+  {
+    "file": "assets/ch7_fig7_01.jpg",
+    "title": "Mixed Tumor of the Parotid Gland (Pleomorphic Adenoma)",
+    "figure": "7.2",
+    "description": "กลุ่มเซลล์เยื่อบุผิวใน stroma ลักษณะ myxoid/chondroid · Figure 7.2 · Neoplasia illustrated edition · หน้า 3"
+  },
+  {
+    "file": "assets/ch7_fig7_02.jpg",
+    "title": "Mature Cystic Teratoma of the Ovary (Dermoid Cyst)",
+    "figure": "7.3",
+    "description": "เปรียบเทียบลักษณะก้อนกับองค์ประกอบเนื้อเยื่อหลายชนิด · Figure 7.3 · Neoplasia illustrated edition · หน้า 4"
+  },
+  {
+    "file": "assets/ch7_fig7_03.jpg",
+    "title": "Benign Thyroid Adenoma",
+    "figure": "7.5",
+    "description": "สังเกตขอบเขตก้อนและแคปซูลที่แยกจากเนื้อไทรอยด์ · Figure 7.5 · Neoplasia illustrated edition · หน้า 4"
+  },
+  {
+    "file": "assets/ch7_fig7_04.jpg",
+    "title": "Invasive Colonic Adenocarcinoma",
+    "figure": "7.8",
+    "description": "เปรียบเทียบต่อมผิดรูปกับการแทรกผ่านผนังลำไส้ · Figure 7.8 · Neoplasia illustrated edition · หน้า 4"
+  },
+  {
+    "file": "assets/ch7_fig7_05.jpg",
+    "title": "Well-Differentiated Squamous Cell Ca",
+    "figure": "7.6",
+    "description": "การสร้าง keratin ช่วยแสดง squamous differentiation · Figure 7.6 · Neoplasia illustrated edition · หน้า 5"
+  },
+  {
+    "file": "assets/ch7_fig7_06.jpg",
+    "title": "Anaplastic Malignant Tumor",
+    "figure": "7.7",
+    "description": "สังเกตความแปรปรวนของเซลล์และนิวเคลียส · Figure 7.7 · Neoplasia illustrated edition · หน้า 5"
+  },
+  {
+    "file": "assets/ch7_fig7_07.jpg",
+    "title": "Pleomorphic Rhabdomyosarcoma & Atypical Mitotic Figures",
+    "figure": "7.9",
+    "description": "ตัวอย่าง pleomorphism และ mitosis ที่มีรูปร่างผิดปกติ · Figure 7.9 · Neoplasia illustrated edition · หน้า 5"
+  },
+  {
+    "file": "assets/ch7_fig7_08.jpg",
+    "title": "Cervical Intraepithelial Neoplasia Grade 3 (Carcinoma In Situ)",
+    "figure": "7.10",
+    "description": "เซลล์ผิดปกติเต็มความหนาของเยื่อบุ โดยยังไม่ล้ำ basement membrane · Figure 7.10 · Neoplasia illustrated edition · หน้า 6"
+  },
+  {
+    "file": "assets/ch7_fig7_09.jpg",
+    "title": "Gross & Microscopic Pathology of Distant Metastases",
+    "figure": "7.15",
+    "description": "เชื่อมลักษณะก้อนแพร่กระจายกับภาพจุลพยาธิวิทยา · Figure 7.15 · Neoplasia illustrated edition · หน้า 6"
+  },
+  {
+    "file": "assets/ch7_fig7_10.jpg",
+    "title": "Pathogenesis of Retinoblastoma & Knudson's Two-Hit Model",
+    "figure": "7.25",
+    "description": "เปรียบเทียบการสูญเสีย RB ทั้งสอง alleles ในแบบถ่ายทอดและแบบ sporadic · Figure 7.25 · Neoplasia illustrated edition · หน้า 9"
+  },
+  {
+    "file": "assets/ch7_fig7_11.jpg",
+    "title": "The Role of p53 in Maintaining the Integrity of the Genome",
+    "figure": "7.27",
+    "description": "p53 เชื่อม DNA damage กับ cell-cycle arrest และ apoptosis · Figure 7.27 · Neoplasia illustrated edition · หน้า 10"
+  },
+  {
+    "file": "assets/ch7_fig7_12.jpg",
+    "title": "The Role of APC in Regulating the Stability and Function of β-Catenin",
+    "figure": "7.28",
+    "description": "APC ควบคุมความคงตัวของ β-catenin ใน Wnt pathway · Figure 7.28 · Neoplasia illustrated edition · หน้า 11"
+  },
+  {
+    "file": "assets/ch7_fig7_13.jpg",
+    "title": "ECM Invasion Cascade",
+    "figure": "7.35",
+    "description": "ลำดับการคลายการยึดเกาะ สลาย ECM ยึดเกาะใหม่ และเคลื่อนที่ · Figure 7.35 · Neoplasia illustrated edition · หน้า 13"
+  },
+  {
+    "file": "assets/ch7_fig7_14.jpg",
+    "title": "Metabolism and Cell Growth (The Warburg Effect)",
+    "figure": "7.29",
+    "description": "เปรียบเทียบการใช้พลังงานและสารตั้งต้นสำหรับการเติบโต · Figure 7.29 · Neoplasia illustrated edition · หน้า 14"
+  },
+  {
+    "file": "assets/ch7_fig7_15.jpg",
+    "title": "Activation of Host Antitumor Immunity by Checkpoint Inhibitors",
+    "figure": "7.39",
+    "description": "แผนภาพการยับยั้ง immune checkpoints เพื่อสนับสนุน T-cell response · Figure 7.39 · Neoplasia illustrated edition · หน้า 15"
+  }
+]

@@ -2,7 +2,7 @@
   const canvas=document.querySelector('#elephant-stars'),stage=document.querySelector('.constellation-stage'),finale=document.querySelector('#naresuan-finale'),roadmap=document.querySelector('#roadmap'),latest=document.querySelector('#roadmap-latest');
   if(!canvas||!stage||!finale||!roadmap||!latest)return;
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let width=0,height=0,frame=0,previous=0,formation=0,animatedScroll=scrollY,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true,autoPulling=false,autoDestination=0,autoStarted=0,autoArrived=0;
+  let width=0,height=0,frame=0,previous=0,formation=0,animatedScroll=scrollY,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true,autoPulling=false,autoStarted=0,autoLastMotion=0;
   const points=[],paths=[],waveDuration=2.1,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
   const random=k=>{const n=Math.sin(k*127.1+71.7)*43758.5453;return n-Math.floor(n)};
   function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
@@ -10,8 +10,11 @@
     const delta=Math.min(64,previous?now-previous:16);previous=now;
     const scroll=scrollY,road=roadmap.getBoundingClientRect(),roadTop=road.top+scroll,roadEnd=road.bottom+scroll;
     const finalRect=finale.getBoundingClientRect(),nav=document.querySelector('.sidebar').getBoundingClientRect(),navHeight=width<=1100?Math.max(0,Math.min(nav.bottom,nav.height)):0;
-    const finalScroll=finalRect.top+scroll-navHeight,latestStart=latest.getBoundingClientRect().top+scroll-height*.7,roadEndStart=roadEnd-height;
-    const target=scroll<latestStart
+    const maxScroll=Math.max(0,document.documentElement.scrollHeight-innerHeight);
+    const finalScroll=Math.min(finalRect.top+scroll-navHeight,maxScroll),latestStart=latest.getBoundingClientRect().top+scroll-height*.7,roadEndStart=roadEnd-height;
+    const finalThreshold=width<=1100?Math.max(navHeight,Math.min(100,height*.14)):navHeight;
+    const atFinal=finalRect.top<=finalThreshold+3||scroll>=maxScroll-3;
+    const target=atFinal?1:scroll<latestStart
       ?.08*smooth(clamp(scroll/Math.max(1,latestStart)))
       :scroll<roadEndStart
         ?.08+.26*smooth(clamp((scroll-latestStart)/Math.max(1,roadEndStart-latestStart)))
@@ -24,19 +27,16 @@
     if(movement>1)scrollingDown=true;
     else if(movement<-1)scrollingDown=false;
     lastScroll=scroll;
+    if(autoPulling&&Math.abs(movement)>1)autoLastMotion=now;
     if(autoPulling&&movement<-2)autoPulling=false;
     if(target<.25)snapArmed=true;
     const intensity=.14+.23*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
-    const atFinal=finalRect.top<=navHeight+3;
-    if(snapArmed&&scrollingDown&&formation>=.5&&!atFinal&&!reduced.matches){snapArmed=false;autoPulling=true;autoDestination=finalScroll;autoStarted=now;autoArrived=0;scrollTo({top:finalScroll,behavior:'smooth'})}
+    if(snapArmed&&scrollingDown&&formation>=.5&&!atFinal&&!reduced.matches){snapArmed=false;autoPulling=true;autoStarted=now;autoLastMotion=now;scrollTo({top:maxScroll,behavior:'smooth'})}
     if(autoPulling){
-      if(atFinal&&Math.abs(scroll-autoDestination)<3){
-        if(!autoArrived)autoArrived=now;
-        if(now-autoArrived>180&&formation>.985){autoPulling=false;celebrated=true;celebrationStart=now}
-      }else autoArrived=0;
-      if(now-autoStarted>4000)autoPulling=false;
+      if(atFinal&&now-autoLastMotion>180&&formation>.985){autoPulling=false;celebrated=true;celebrationStart=now}
+      if(now-autoStarted>5000)autoPulling=false;
     }
-    if(finalRect.top>navHeight+24){celebrated=false;celebrationStart=-Infinity}
+    if(finalRect.top>finalThreshold+24&&scroll<maxScroll-3){celebrated=false;celebrationStart=-Infinity}
     if(!celebrated&&!autoPulling&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
     const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<waveDuration;
     const waveFront=wave?effect/waveDuration*1.4-.2:-10;

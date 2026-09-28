@@ -2,7 +2,7 @@
   const canvas=document.querySelector('#elephant-stars'),stage=document.querySelector('.constellation-stage'),finale=document.querySelector('#naresuan-finale'),roadmap=document.querySelector('#roadmap');
   if(!canvas||!stage||!finale||!roadmap)return;
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let width=0,height=0,frame=0,previous=0,formation=0,celebrated=false,celebrationStart=-Infinity;
+  let width=0,height=0,frame=0,previous=0,formation=0,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true;
   const points=[],paths=[],waveDuration=2.1,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
   const random=k=>{const n=Math.sin(k*127.1+71.7)*43758.5453;return n-Math.floor(n)};
   function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
@@ -15,8 +15,13 @@
     formation=reduced.matches?target:formation+(target-formation)*(1-Math.exp(-delta/180));
     if(target===0&&formation<.001)formation=0;
     if(target>.999&&formation>.995)formation=1;
+    if(scroll>lastScroll+1)scrollingDown=true;
+    else if(scroll<lastScroll-1)scrollingDown=false;
+    lastScroll=scroll;
+    if(target<.35)snapArmed=true;
     const intensity=.065+.24*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
     const atFinal=finalRect.top<=navHeight+3;
+    if(snapArmed&&scrollingDown&&formation>=.7&&!atFinal&&!reduced.matches){snapArmed=false;scrollTo({top:finalScroll,behavior:'smooth'})}
     if(finalRect.top>navHeight+24){celebrated=false;celebrationStart=-Infinity}
     if(!celebrated&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
     const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<waveDuration;

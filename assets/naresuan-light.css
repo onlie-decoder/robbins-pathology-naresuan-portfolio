@@ -49,6 +49,13 @@ dialog{background:#fffaf5!important;color:#34404b!important;border-color:#d5c5b2
 .btn-copy-code{background:#fff3e2!important;color:#8a501f!important;border-color:#dec3a3!important}.code-copy-box code,.prompt-highlight-box code{color:#5b5145!important}
 .prompt-highlight-box strong{color:#70431f!important}
 @media(min-width:701px) and (max-width:900px){.hero-grid{grid-template-columns:1fr!important}.hero .lead{max-width:100%}.skill-cycle{max-width:360px}.hero .actions{flex-direction:row}}
+/* Handwritten notes lead the portfolio; unannotated PDFs remain available. */
+#roadmap .notes-button.note-featured,#roadmap .artifact-body .notes-button.note-featured,#roadmap .latest-downloads .note-featured{background:#f7d461!important;border:1px solid #d2ab39!important;color:#302914!important;font-size:13px!important;font-weight:700!important;min-height:42px!important;padding:9px 14px!important;box-shadow:0 5px 14px #b28a2723!important;order:0}
+#roadmap .notes-button.note-featured:hover{background:#ffe481!important;border-color:#bc8d20!important}
+#roadmap .pdf-option,#roadmap .artifact-body .pdf-option,#roadmap .latest-downloads .pdf-option{background:#eef0f2!important;border:1px solid #d2d7db!important;color:#58616a!important;box-shadow:none!important;font-weight:500!important;order:1}
+#roadmap .artifact-body .actions{align-items:center}
+#roadmap .artifact-body .actions a:not(.note-featured):not(.pdf-option){order:2}
+@media(max-width:649px){#roadmap .artifact-body .notes-button.note-featured{font-size:11px!important;min-height:37px!important;padding:7px 9px!important}#roadmap .latest-downloads .note-featured{font-size:11px!important}}
 /* One field follows the reader and ends on an uncluttered final screen. */
 #elephant-stars{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
 main{position:relative;z-index:1;background:transparent}

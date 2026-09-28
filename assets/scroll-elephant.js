@@ -3,7 +3,7 @@
   if(!canvas||!stage||!finale||!roadmap)return;
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
   let width=0,height=0,frame=0,previous=0,formation=0,celebrated=false,celebrationStart=-Infinity;
-  const points=[],paths=[],clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
+  const points=[],paths=[],waveDuration=2.1,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
   const random=k=>{const n=Math.sin(k*127.1+71.7)*43758.5453;return n-Math.floor(n)};
   function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
   function draw(now){
@@ -17,11 +17,11 @@
     if(target>.999&&formation>.995)formation=1;
     const intensity=.065+.24*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
     const atFinal=finalRect.top<=navHeight+3;
+    if(finalRect.top>navHeight+24){celebrated=false;celebrationStart=-Infinity}
     if(!celebrated&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
-    if(target<.08){celebrated=false;celebrationStart=-Infinity}
-    const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<.85;
-    const waveFront=wave?effect/.85*1.4-.2:-10;
-    const bounce=!reduced.matches&&effect>=0&&effect<.85?-Math.sin(Math.PI*effect/.85)*Math.exp(-effect*1.3)*Math.min(48,height*.07):0;
+    const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<waveDuration;
+    const waveFront=wave?effect/waveDuration*1.4-.2:-10;
+    const bounce=wave?-Math.sin(Math.PI*effect/waveDuration)*Math.exp(-effect*.6)*Math.min(48,height*.07):0;
     canvas.dataset.phase=wave?'white-wave':formation>.985?'elephant':formation>.01?'assembling':'scattered';
     const box=stage.getBoundingClientRect(),artWidth=Math.min(box.width*.96,box.height*790/530*.93),artHeight=artWidth*530/790;
     const left=box.left+(box.width-artWidth)/2,top=box.top+(box.height-artHeight)/2;

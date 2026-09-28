@@ -1,8 +1,8 @@
 (() => {
-  const canvas=document.querySelector('#elephant-stars'),stage=document.querySelector('.constellation-stage'),finale=document.querySelector('#naresuan-finale'),roadmap=document.querySelector('#roadmap');
-  if(!canvas||!stage||!finale||!roadmap)return;
+  const canvas=document.querySelector('#elephant-stars'),stage=document.querySelector('.constellation-stage'),finale=document.querySelector('#naresuan-finale'),roadmap=document.querySelector('#roadmap'),latest=document.querySelector('#roadmap-latest');
+  if(!canvas||!stage||!finale||!roadmap||!latest)return;
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
-  let width=0,height=0,frame=0,previous=0,formation=0,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true;
+  let width=0,height=0,frame=0,previous=0,formation=0,animatedScroll=scrollY,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true,autoPulling=false,autoDestination=0,autoStarted=0,autoArrived=0;
   const points=[],paths=[],waveDuration=2.1,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
   const random=k=>{const n=Math.sin(k*127.1+71.7)*43758.5453;return n-Math.floor(n)};
   function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
@@ -10,24 +10,39 @@
     const delta=Math.min(64,previous?now-previous:16);previous=now;
     const scroll=scrollY,road=roadmap.getBoundingClientRect(),roadTop=road.top+scroll,roadEnd=road.bottom+scroll;
     const finalRect=finale.getBoundingClientRect(),nav=document.querySelector('.sidebar').getBoundingClientRect(),navHeight=width<=1100?Math.max(0,Math.min(nav.bottom,nav.height)):0;
-    const finalScroll=finalRect.top+scroll-navHeight,start=roadEnd-height;
-    const target=smooth(clamp((scroll-start)/Math.max(1,finalScroll-start)));
+    const finalScroll=finalRect.top+scroll-navHeight,latestStart=latest.getBoundingClientRect().top+scroll-height*.7,roadEndStart=roadEnd-height;
+    const target=scroll<latestStart
+      ?.08*smooth(clamp(scroll/Math.max(1,latestStart)))
+      :scroll<roadEndStart
+        ?.08+.26*smooth(clamp((scroll-latestStart)/Math.max(1,roadEndStart-latestStart)))
+        :.34+.66*smooth(clamp((scroll-roadEndStart)/Math.max(1,finalScroll-roadEndStart)));
     formation=reduced.matches?target:formation+(target-formation)*(1-Math.exp(-delta/180));
+    animatedScroll=reduced.matches?scroll:animatedScroll+(scroll-animatedScroll)*(1-Math.exp(-delta/260));
     if(target===0&&formation<.001)formation=0;
     if(target>.999&&formation>.995)formation=1;
-    if(scroll>lastScroll+1)scrollingDown=true;
-    else if(scroll<lastScroll-1)scrollingDown=false;
+    const movement=scroll-lastScroll;
+    if(movement>1)scrollingDown=true;
+    else if(movement<-1)scrollingDown=false;
     lastScroll=scroll;
+    if(autoPulling&&movement<-2)autoPulling=false;
     if(target<.25)snapArmed=true;
-    const intensity=.065+.24*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
+    const intensity=.14+.23*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
     const atFinal=finalRect.top<=navHeight+3;
-    if(snapArmed&&scrollingDown&&formation>=.5&&!atFinal&&!reduced.matches){snapArmed=false;scrollTo({top:finalScroll,behavior:'smooth'})}
+    if(snapArmed&&scrollingDown&&formation>=.5&&!atFinal&&!reduced.matches){snapArmed=false;autoPulling=true;autoDestination=finalScroll;autoStarted=now;autoArrived=0;scrollTo({top:finalScroll,behavior:'smooth'})}
+    if(autoPulling){
+      if(atFinal&&Math.abs(scroll-autoDestination)<3){
+        if(!autoArrived)autoArrived=now;
+        if(now-autoArrived>180&&formation>.985){autoPulling=false;celebrated=true;celebrationStart=now}
+      }else autoArrived=0;
+      if(now-autoStarted>4000)autoPulling=false;
+    }
     if(finalRect.top>navHeight+24){celebrated=false;celebrationStart=-Infinity}
-    if(!celebrated&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
+    if(!celebrated&&!autoPulling&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
     const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<waveDuration;
     const waveFront=wave?effect/waveDuration*1.4-.2:-10;
     const bounce=wave?-Math.sin(Math.PI*effect/waveDuration)*Math.exp(-effect*.6)*Math.min(48,height*.07):0;
     canvas.dataset.phase=wave?'white-wave':formation>.985?'elephant':formation>.01?'assembling':'scattered';
+    canvas.dataset.alignment=(formation*100).toFixed(1);
     const box=stage.getBoundingClientRect(),artWidth=Math.min(box.width*.96,box.height*790/530*.93),artHeight=artWidth*530/790;
     const left=box.left+(box.width-artWidth)/2,stageTop=box.top+(box.height-artHeight)/2;
     const approach=smooth(clamp((height-finalRect.top)/height));
@@ -38,7 +53,10 @@
       const t=now*p.speed+p.phase;
       const dx=reduced.matches?0:p.wobble*(Math.sin(t)*.72+Math.sin(t*1.73+p.phase)*.28);
       const dy=reduced.matches?0:p.wobble*.36*(Math.cos(t*.83)*.7+Math.sin(t*1.31+p.phase)*.3);
-      const sx=fieldLeft+p.sx*fieldWidth+dx,sy=p.sy*height+dy;
+      const scrollPhase=animatedScroll/420;
+      const driftX=reduced.matches?0:p.wobble*.8*(Math.sin(scrollPhase+p.phase)-Math.sin(p.phase));
+      const driftY=reduced.matches?0:p.wobble*.6*(Math.cos(scrollPhase*.72+p.phase)-Math.cos(p.phase));
+      const sx=fieldLeft+p.sx*fieldWidth+dx+driftX,sy=p.sy*height+dy+driftY;
       return{x:sx*(1-formation)+(left+p.x*artWidth)*formation,y:sy*(1-formation)+(top+p.y*artHeight+bounce)*formation};
     });
     if(formation>.7){ctx.lineWidth=.55;ctx.strokeStyle=`rgba(135,109,78,${(formation-.7)*.8})`;paths.forEach(path=>{ctx.beginPath();path.forEach((id,j)=>{const q=positions[id];j?ctx.lineTo(q.x,q.y):ctx.moveTo(q.x,q.y)});ctx.closePath();ctx.stroke()})}

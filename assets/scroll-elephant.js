@@ -18,10 +18,10 @@
     if(scroll>lastScroll+1)scrollingDown=true;
     else if(scroll<lastScroll-1)scrollingDown=false;
     lastScroll=scroll;
-    if(target<.35)snapArmed=true;
+    if(target<.25)snapArmed=true;
     const intensity=.065+.24*smooth(clamp((scroll+height*.25)/Math.max(1,roadTop+road.height*.75-height*.75)));
     const atFinal=finalRect.top<=navHeight+3;
-    if(snapArmed&&scrollingDown&&formation>=.7&&!atFinal&&!reduced.matches){snapArmed=false;scrollTo({top:finalScroll,behavior:'smooth'})}
+    if(snapArmed&&scrollingDown&&formation>=.5&&!atFinal&&!reduced.matches){snapArmed=false;scrollTo({top:finalScroll,behavior:'smooth'})}
     if(finalRect.top>navHeight+24){celebrated=false;celebrationStart=-Infinity}
     if(!celebrated&&atFinal&&formation>.985){celebrated=true;celebrationStart=now}
     const effect=(now-celebrationStart)/1000,wave=!reduced.matches&&effect>=0&&effect<waveDuration;
@@ -29,7 +29,9 @@
     const bounce=wave?-Math.sin(Math.PI*effect/waveDuration)*Math.exp(-effect*.6)*Math.min(48,height*.07):0;
     canvas.dataset.phase=wave?'white-wave':formation>.985?'elephant':formation>.01?'assembling':'scattered';
     const box=stage.getBoundingClientRect(),artWidth=Math.min(box.width*.96,box.height*790/530*.93),artHeight=artWidth*530/790;
-    const left=box.left+(box.width-artWidth)/2,top=box.top+(box.height-artHeight)/2;
+    const left=box.left+(box.width-artWidth)/2,stageTop=box.top+(box.height-artHeight)/2;
+    const approach=smooth(clamp((height-finalRect.top)/height));
+    const top=(height-artHeight)/2+(stageTop-(height-artHeight)/2)*approach;
     const fieldLeft=width>1100?nav.right:0,fieldWidth=width-fieldLeft,alpha=intensity*(1-formation)+.83*formation;
     ctx.clearRect(0,0,width,height);
     const positions=points.map((p,i)=>{

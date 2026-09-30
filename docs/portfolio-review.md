@@ -46,3 +46,10 @@ Commit `d952a7a` is ready on local branch `codex/portfolio-learning-archive`. Th
 The user has been asked to sign in on their machine, not to send a password or token in chat. Continue local polish and record only meaningful new findings. Do not repeatedly start interactive Git authentication while the user is away. When authentication is supplied, verify the remote main revision before a normal fast-forward push, and then verify the deployed page and asset responses.
 
 A thread heartbeat is scheduled on quarter-hour rounds through 20:30 Bangkok on 30 September 2026. At the deadline, deliver the reviewed local result even if authentication is still unavailable; state the publishing limitation, then pause the heartbeat.
+
+## Lifecycle follow-up · 19:38 Bangkok
+
+- Temporary canvas instrumentation counted 252 draw calls while the finale was visible. Pausing produced one final static draw (253), then the count remained 253 across the next observation. After leaving the finale, the count remained stable across successive observations; opening the skill dialog caused one additional static draw, then no continuous work. The instrumentation was removed by a clean reload.
+- Navigating to the local SVG and using browser Back returned a new document (`navigation.type = back_forward`), rather than a BFCache restoration. Skill tabs and the comparison initialized correctly after returning. Actual BFCache restoration remains unverified in this browser; the persisted pagehide/pageshow handling has only been inspected in source.
+- The browser captured one error during the SVG/history test from an unnamed, minified script (`Lr`, script ID 4, empty source URL), involving an `animation` property. That operation does not appear in the site's JavaScript. This has not been attributed to the portfolio code; avoid treating this session as a clean zero-error result.
+- Publishing remains pending authentication. No new deployment attempt was made without a sign-in update.

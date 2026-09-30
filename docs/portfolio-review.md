@@ -59,3 +59,9 @@ A thread heartbeat is scheduled on quarter-hour rounds through 20:30 Bangkok on 
 - Added a 1200 × 630 PNG sharing image matching the editorial design, plus canonical URL, Open Graph image/locale/URL and a large Twitter card. The image is 60,010 bytes and is not loaded by the portfolio page itself. Editable rendering source is `assets/share-card.html`.
 - Visually inspected the artwork at its exact export dimensions. Rechecked preservation after the metadata edit: all 10 PDF hashes and original Drive links still pass, as do all 27 principles and local targets. Current HTML payload is 80,144 bytes.
 - Social-platform preview fetching cannot be verified until the new files are published; the metadata currently points to the intended live GitHub Pages URLs.
+
+## Failure-path review · 20:06 Bangkok
+
+- In an isolated browser tab, blocked `portfolio.js` and reloaded. All 10 distinct PDF links and the direct SKILL.md download remained available. Native details opened all 27 principle sections without the application script. Comparison images remained side by side and the range control stayed hidden.
+- Separately blocked `elephant-constellation.json`. The failed request hid the canvas and replay control, while the static SVG loaded and was visibly inspected in the finale. Network blocking was cleared and the isolated test tab closed afterward.
+- No implementation changes were necessary in this round. The enhanced skill dialog and copy buttons require JavaScript; the direct file link and readable principle sections provide the core fallback.

@@ -1,0 +1,40 @@
+# Portfolio review · 30 September 2026
+
+Scope: the public portfolio interface and its code. The contents of the existing PDFs and Google Drive notes were not reviewed or rewritten.
+
+## Result
+
+- An editorial learning archive replaces the layered sidebar and oversized installation instructions. The opening explains the applicant's process, with selected PDF outputs immediately accessible.
+- All 10 repository PDFs have visible links. Seven remain the primary collection; three additional archived files are now accessible. Every PDF has the same SHA-256 as revision `59b9978cb0f61ad23a9c5ec825b7e5255a645c85`.
+- Original Drive destinations and the 27 explanatory principle sections are preserved. Current and August source skills remain available. Shared roadmap anchor URLs are retained.
+- The finale uses the existing traced elephant contours, a static SVG fallback, and locally confined star formation. It never changes the user's scroll position.
+- The cover responds to mouse movement only when motion is enabled. An accessible range control compares the first pages of Blood Vessels and Neoplasia; PDF links accompany the comparison.
+
+## Accuracy corrections
+
+- The public page no longer describes a file saying `Always-Load` as a guarantee that every agent will automatically load it. Attaching Markdown in a chat is distinguished from installing a skill.
+- Chapter 1's archived PDF and the separately linked handwritten notes are distinguished. The timeline avoids treating a PDF export date as the author's learning start date.
+- Counts and sizes on the cards come from the actual archived files. The old page exposed 7 PDFs while the repository contained 10.
+- The comparison says *first page*, rather than claiming that the earlier document had a separate cover.
+
+## Performance and lifecycle
+
+- `index.html`: 315,303 to 79,367 bytes at this review point (about 75% smaller).
+- The selected Neoplasia cover: 347,791-byte PNG to 19,806-byte WebP. Original PNG files are retained. Other covers use optimized WebP derivatives.
+- Only the local CSS and JS are loaded at startup; source skill text is fetched on demand and cached at most once per version. PDFs are links, not embedded viewers loaded with the page.
+- Fonts are self-hosted with `font-display: swap`; the corresponding SIL Open Font Licenses are included. Unused font subsets were omitted.
+- Scroll work is scheduled after input. The elephant renders at a maximum of 30 fps only while visible, the page is visible, motion is enabled, and the skill dialog is closed. Geometry buffers are reused.
+- Event listeners share an AbortController. Observers, frames, requests, and timers are released when leaving the page; back-forward cache restores suspend and resume the lifecycle.
+- Reduced-motion preference and a manual motion toggle are supported. SVG remains available when canvas or the contour request is unavailable.
+
+## Verification evidence
+
+- Static preservation test: `python tools/verify_portfolio.py` passes. It checks every PDF hash, all PDF destinations, original Drive URLs, all principle IDs, the original skill, unique IDs, local link targets, and CSS font targets.
+- `node --check assets/portfolio.js` and `git diff --check` pass.
+- HTTP HEAD checks: all 10 PDF endpoints, both source skill versions, CSS, JS, and the SVG return successfully on the local server.
+- Layouts inspected at 320, 390, 768, and 1440 CSS-pixel browser widths. No horizontal overflow was observed. Skill tabs support arrow keys and Escape; copying and comparison keyboard control work.
+- Short repeat-use check before the comparison enhancement: 10 open/switch/close cycles kept nodes at 1,264 and listeners at 248; detached script states remained 0. Reported JS heap decreased from 8,732,212 to 8,174,644 bytes. This does not prove that no leak can ever occur.
+- Cold local mobile simulation, 390 × 844 viewport, 4× CPU throttling, 150 ms artificial latency, 200,000 bytes/sec downstream: LCP 1,592 ms, CLS 0, DOMContentLoaded 1,973 ms, load 2,616 ms. These are development measurements, not field/Core Web Vitals claims.
+- No JavaScript errors or warnings observed in the inspected new-page sessions.
+
+The live deployment must be checked after publishing. Any later measurements and edits should be appended here rather than repeatedly rerunning unchanged checks.

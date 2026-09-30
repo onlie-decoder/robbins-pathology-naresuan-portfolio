@@ -53,3 +53,9 @@ A thread heartbeat is scheduled on quarter-hour rounds through 20:30 Bangkok on 
 - Navigating to the local SVG and using browser Back returned a new document (`navigation.type = back_forward`), rather than a BFCache restoration. Skill tabs and the comparison initialized correctly after returning. Actual BFCache restoration remains unverified in this browser; the persisted pagehide/pageshow handling has only been inspected in source.
 - The browser captured one error during the SVG/history test from an unnamed, minified script (`Lr`, script ID 4, empty source URL), involving an `animation` property. That operation does not appear in the site's JavaScript. This has not been attributed to the portfolio code; avoid treating this session as a clean zero-error result.
 - Publishing remains pending authentication. No new deployment attempt was made without a sign-in update.
+
+## Sharing polish · 19:51 Bangkok
+
+- Added a 1200 × 630 PNG sharing image matching the editorial design, plus canonical URL, Open Graph image/locale/URL and a large Twitter card. The image is 60,010 bytes and is not loaded by the portfolio page itself. Editable rendering source is `assets/share-card.html`.
+- Visually inspected the artwork at its exact export dimensions. Rechecked preservation after the metadata edit: all 10 PDF hashes and original Drive links still pass, as do all 27 principles and local targets. Current HTML payload is 80,144 bytes.
+- Social-platform preview fetching cannot be verified until the new files are published; the metadata currently points to the intended live GitHub Pages URLs.

@@ -38,3 +38,11 @@ Scope: the public portfolio interface and its code. The contents of the existing
 - No JavaScript errors or warnings observed in the inspected new-page sessions.
 
 The live deployment must be checked after publishing. Any later measurements and edits should be appended here rather than repeatedly rerunning unchanged checks.
+
+## Publishing status · 19:28 Bangkok
+
+Commit `d952a7a` is ready on local branch `codex/portfolio-learning-archive`. The working site is served at `http://127.0.0.1:4173/`. Publishing to the original GitHub Pages repository is pending GitHub authentication. A noninteractive push reports `could not read Username for 'https://github.com'`; the in-app GitHub session is also signed out. The remote main branch remains `59b9978`. No successful publication has occurred yet.
+
+The user has been asked to sign in on their machine, not to send a password or token in chat. Continue local polish and record only meaningful new findings. Do not repeatedly start interactive Git authentication while the user is away. When authentication is supplied, verify the remote main revision before a normal fast-forward push, and then verify the deployed page and asset responses.
+
+A thread heartbeat is scheduled on quarter-hour rounds through 20:30 Bangkok on 30 September 2026. At the deadline, deliver the reviewed local result even if authentication is still unavailable; state the publishing limitation, then pause the heartbeat.

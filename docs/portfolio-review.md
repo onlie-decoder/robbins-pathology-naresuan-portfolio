@@ -75,3 +75,9 @@ The active interface now returns to the original Naresuan roadmap, with the wind
 The two skill sources now load on demand, instead of embedding their text in HTML. The full-page constellation retains the original behavior with draw work capped at 30 fps, reused point positions and pagehide cancellation. Original optimized cover copies and local fonts are used. This supersedes the earlier confined-finale design and its performance measurements: the earlier LCP/heap numbers do not describe this restored version.
 
 Preservation verification passes for all 10 PDF hashes, original Drive destinations and all 27 principle IDs. Desktop 1440 and mobile 390 were inspected without horizontal overflow; source loading completed, the mobile sidebar opened/closed, and comparison keyboard movement changed 52 to 53. No application errors were observed in the inspected restored session. Google Drive note contents were not opened.
+
+## Publication after correction
+
+Commit `cf2d3a7` was pushed to main and the GitHub Pages workflow completed successfully. The live title is now “SKILL.md ของผม”, the header is absent, all 10 PDF destinations are present and the full-page star canvas reaches the scattered/assembling phases. This supersedes the earlier authentication blocker.
+
+Git Credential Manager displayed an account picker because it had both `onlie-decoder` and an `x-access-token` entry. The repository remote now includes the public username `onlie-decoder`, and the repository's Git credential username is set to that account. A subsequent push completed as already up to date without an account picker. No password or token was read or added to the source files.

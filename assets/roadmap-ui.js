@@ -78,7 +78,20 @@ document.querySelectorAll('.sidebar a').forEach(a=>a.addEventListener('click',()
 addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.removeAttribute('data-nav-open');menu.setAttribute('aria-expanded','false')}});
 const range=document.querySelector('#compare-range'),figure=document.querySelector('#compare-figure');figure.dataset.ready='true';range.hidden=false;
 function compare(){figure.style.setProperty('--compare',`${100-Number(range.value)}%`);range.setAttribute('aria-valuetext',`เผยฉบับปัจจุบัน ${range.value} เปอร์เซ็นต์`)}range.addEventListener('input',compare);compare();
-document.querySelectorAll('.cover-link').forEach(cover=>{cover.addEventListener('pointermove',e=>{if(e.pointerType!=='mouse'||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const b=cover.getBoundingClientRect();cover.style.setProperty('--cover-x',`${(e.clientY-b.top)/b.height*-5+2.5}deg`);cover.style.setProperty('--cover-y',`${(e.clientX-b.left)/b.width*5-2.5}deg`)});cover.addEventListener('pointerleave',()=>{cover.style.setProperty('--cover-x','0deg');cover.style.setProperty('--cover-y','0deg')})});
+// Foil lighting runs only after mouse input, with at most one pending frame per cover.
+const coverMotion=matchMedia('(prefers-reduced-motion: reduce)'),resetCovers=[];
+document.querySelectorAll('.cover-link').forEach(cover=>{
+ let frame=0,x=.5,y=.5;
+ const reset=()=>{cancelAnimationFrame(frame);frame=0;cover.style.setProperty('--cover-x','0deg');cover.style.setProperty('--cover-y','0deg');cover.style.setProperty('--foil-on','0')};resetCovers.push(reset);
+ cover.addEventListener('pointermove',e=>{
+  if(e.pointerType!=='mouse'||coverMotion.matches||document.hidden)return;
+  const b=cover.getBoundingClientRect();x=Math.max(0,Math.min(1,(e.clientX-b.left)/b.width));y=Math.max(0,Math.min(1,(e.clientY-b.top)/b.height));
+  if(frame)return;frame=requestAnimationFrame(()=>{frame=0;cover.style.setProperty('--cover-x',`${y*-5+2.5}deg`);cover.style.setProperty('--cover-y',`${x*5-2.5}deg`);cover.style.setProperty('--foil-x',`${x*100}%`);cover.style.setProperty('--foil-y',`${y*100}%`);cover.style.setProperty('--foil-angle',`${105+x*35-y*12}deg`);cover.style.setProperty('--foil-on','1')});
+ });cover.addEventListener('pointerleave',reset);cover.addEventListener('pointercancel',reset);
+});
+coverMotion.addEventListener('change',()=>resetCovers.forEach(reset=>reset()));
+document.addEventListener('visibilitychange',()=>{if(document.hidden)resetCovers.forEach(reset=>reset())});
+addEventListener('pagehide',()=>resetCovers.forEach(reset=>reset()));
 addEventListener('pagehide',()=>{sourceRequest?.abort();sourceSerial++});
 
 const mobileSidebar=matchMedia('(max-width:800px)');

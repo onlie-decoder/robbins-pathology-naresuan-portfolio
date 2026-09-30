@@ -3,14 +3,14 @@
   if(!canvas||!stage||!finale||!roadmap||!latest)return;
   const ctx=canvas.getContext('2d'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
   let width=0,height=0,frame=0,previous=0,formation=0,animatedScroll=scrollY,celebrated=false,celebrationStart=-Infinity,lastScroll=scrollY,scrollingDown=false,snapArmed=true,autoPulling=false,autoStarted=0,autoLastMotion=0;
-  const points=[],paths=[],waveDuration=2.1,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
+  const points=[],paths=[],waveDuration=2.6,clamp=x=>Math.max(0,Math.min(1,x)),smooth=x=>x*x*(3-2*x);
   const random=k=>{const n=Math.sin(k*127.1+71.7)*43758.5453;return n-Math.floor(n)};
   function resize(){width=document.documentElement.clientWidth;height=document.documentElement.clientHeight;const dpr=Math.min(devicePixelRatio||1,1.5);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);sync()}
   function draw(now){
     frame=0;if(document.hidden)return;if(now-previous<1000/30){frame=requestAnimationFrame(draw);return;}
     const delta=Math.min(64,previous?now-previous:16);previous=now;
     const scroll=scrollY,road=roadmap.getBoundingClientRect(),roadTop=road.top+scroll,roadEnd=road.bottom+scroll;
-    const finalRect=finale.getBoundingClientRect(),nav=document.querySelector('.sidebar').getBoundingClientRect(),navHeight=width<=1100?Math.max(0,Math.min(nav.bottom,nav.height)):0;
+    const finalRect=finale.getBoundingClientRect(),nav=document.querySelector('.sidebar').getBoundingClientRect(),navHeight=0;
     const maxScroll=Math.max(0,document.documentElement.scrollHeight-innerHeight);
     const finalScroll=Math.min(finalRect.top+scroll-navHeight,maxScroll),latestStart=latest.getBoundingClientRect().top+scroll-height*.7,roadEndStart=roadEnd-height;
     const finalThreshold=width<=1100?Math.max(navHeight,Math.min(100,height*.14)):navHeight;
@@ -60,14 +60,14 @@
       const sx=fieldLeft+p.sx*fieldWidth+dx+driftX,sy=p.sy*height+dy+driftY;
       p.px=sx*(1-formation)+(left+p.x*artWidth)*formation;p.py=sy*(1-formation)+(top+p.y*artHeight+bounce)*formation;
     });
-    if(formation>.7){ctx.lineWidth=.55;ctx.strokeStyle=`rgba(135,109,78,${(formation-.7)*.8})`;paths.forEach(path=>{ctx.beginPath();path.forEach((id,j)=>{const q=positions[id];j?ctx.lineTo(q.px,q.py):ctx.moveTo(q.px,q.py)});ctx.closePath();ctx.stroke()})}
+    if(formation>.7){ctx.lineWidth=.55;ctx.strokeStyle=wave?`rgba(200,145,67,${.24+.28*Math.sin(Math.PI*effect/waveDuration)})`:`rgba(135,109,78,${(formation-.7)*.8})`;paths.forEach(path=>{ctx.beginPath();path.forEach((id,j)=>{const q=positions[id];j?ctx.lineTo(q.px,q.py):ctx.moveTo(q.px,q.py)});ctx.closePath();ctx.stroke()})}
     points.forEach((p,i)=>{
       const q=positions[i],orange=p.x>.22&&p.y<.57,twinkle=reduced.matches?.9:.76+.24*Math.sin(now*.0014+i*2.4);
-      const shine=wave?Math.exp(-Math.pow((p.x-waveFront)/.115,2)):0;
-      const base=orange?[190,105,24]:[91,112,129];
-      const color=`rgba(${Math.round(base[0]+(255-base[0])*shine)},${Math.round(base[1]+(255-base[1])*shine)},${Math.round(base[2]+(255-base[2])*shine)},${alpha*twinkle+shine*(1-alpha*twinkle)})`;
+      const shine=wave?Math.exp(-Math.pow((p.x-waveFront)/.09,2)):0;
+      const baseR=orange?190:91,baseG=orange?105:112,baseB=orange?24:129;
+      const color=`rgba(${Math.round(baseR+(255-baseR)*shine)},${Math.round(baseG+(249-baseG)*shine)},${Math.round(baseB+(231-baseB)*shine)},${alpha*twinkle+shine*(1-alpha*twinkle)})`;
       ctx.fillStyle=color;const scale=(1-formation)*.8+formation*(artWidth/760+.3),r=p.size*scale*(1+shine*(p.size>5?1.35:2.15));
-      ctx.shadowColor=orange?'#c67b27':'#7691aa';ctx.shadowBlur=shine*12;
+      ctx.shadowColor=orange?'#c67b27':'#7691aa';ctx.shadowBlur=shine*15;
       if(p.spark){ctx.shadowBlur=Math.max(ctx.shadowBlur,(formation*.8+.2)*Math.min(12,p.size*2));ctx.beginPath();ctx.moveTo(q.px,q.py-r*2);ctx.lineTo(q.px+r*.35,q.py-r*.35);ctx.lineTo(q.px+r*1.6,q.py);ctx.lineTo(q.px+r*.35,q.py+r*.35);ctx.lineTo(q.px,q.py+r*2);ctx.lineTo(q.px-r*.35,q.py+r*.35);ctx.lineTo(q.px-r*1.6,q.py);ctx.lineTo(q.px-r*.35,q.py-r*.35);ctx.closePath();ctx.fill()}
       else{ctx.beginPath();ctx.arc(q.px,q.py,r,0,Math.PI*2);ctx.fill()}
       ctx.shadowBlur=0;

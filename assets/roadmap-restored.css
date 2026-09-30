@@ -22,6 +22,20 @@ main{margin-left:280px!important;margin-right:0!important;padding-top:0!importan
 
 /* Input-driven pearl/foil lighting, clipped to the cover rather than the reading area. */
 .cover-link{position:relative;isolation:isolate;overflow:hidden}
-.cover-link::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;opacity:calc(var(--foil-on,0)*.72);background:radial-gradient(ellipse at var(--foil-x,50%) var(--foil-y,50%),#fffdf9a6,transparent 46%),linear-gradient(var(--foil-angle,120deg),transparent 24%,#e7b77222 34%,#fff6d980 42%,#c5d4e66b 47%,#fffaf09c 51%,#e3b36035 57%,transparent 68%);mix-blend-mode:screen;transition:opacity .22s ease-out}
+.cover-link::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;opacity:calc(var(--foil-on,0)*.42);background:radial-gradient(ellipse at var(--foil-x,50%) var(--foil-y,50%),#fffdf933,transparent 48%),linear-gradient(var(--foil-angle,120deg),transparent 38%,#d9ad5e26 44%,#fff5d938 49%,#b1c7d32e 53%,#e3bb7624 57%,transparent 64%);mix-blend-mode:screen;transition:opacity .22s ease-out}
 .cover-link:focus-visible::after{opacity:.3}
 @media(hover:none),(prefers-reduced-motion:reduce){.cover-link::after{display:none}}
+
+/* A compact skill introduction and quieter cover reflections. */
+#skill .reviewer-notice{padding:18px 22px!important;border-left-width:3px!important;margin:16px 0 20px!important;border-radius:10px!important}
+#skill .reviewer-label{font-size:10px!important;letter-spacing:0!important}
+#skill .reviewer-notice h2{font-size:24px!important;line-height:1.45!important;margin:9px 0 7px!important}
+#skill .reviewer-notice p{font-size:13px!important;line-height:1.75!important;max-width:70ch;margin:0 0 12px!important}
+#skill .notice-action-row{gap:8px!important;margin-top:0!important;align-items:center!important}
+#skill .notice-action-row .btn{font-size:11px!important;padding:7px 11px!important;min-height:34px!important;gap:7px!important}
+#skill .toggle-callout{font-size:10px!important;line-height:1.5!important;padding:0!important;margin:3px 0 0!important}
+#skill .bouncing-arrow{animation:none!important;font-size:12px!important}
+.skill-cycle{max-width:350px!important}.cycle-node{width:100px!important;height:100px!important;padding:9px!important}.cycle-node strong{font-size:14px!important}.cycle-node small,.cycle-node span{font-size:9px!important}.cycle-center{width:94px!important;height:94px!important}.cycle-center small{font-size:9px!important}
+@media(max-width:520px){#skill .reviewer-notice{padding:15px 16px!important}#skill .reviewer-notice h2{font-size:21px!important}.skill-cycle{max-width:300px!important}.cycle-node{width:88px!important;height:88px!important}.cycle-node strong{font-size:12px!important}.cycle-center{width:78px!important;height:78px!important}}
+
+#skill .install-fold{padding:12px 16px!important;margin-top:16px!important}#skill .install-fold>summary{font-size:12px!important;line-height:1.6!important}#skill-explainer>summary{padding:14px 18px!important;font-size:13px!important;line-height:1.6!important}

@@ -1,4 +1,4 @@
-# Learning, by making. — Naresuan portfolio
+# SKILL.md ของผม — เส้นทางการพัฒนา
 
 A personal learning portfolio by **onlie-decoder**, prepared to support an application to Naresuan University. It presents the development of an HTML-to-PDF study workflow, the author's reusable `SKILL.md`, and the archived PDF outputs.
 
@@ -20,7 +20,7 @@ This is a static site with no build step or frontend runtime dependencies:
 python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:4173`. `index.html`, `assets/portfolio.css` and `assets/portfolio.js` are the active presentation files. Fonts are served locally; their Open Font Licenses are under `assets/fonts/`. Source skills are loaded only when requested; PDFs are opened through links.
+Open `http://127.0.0.1:4173`. `index.html`, `assets/roadmap-restored.css`, `assets/roadmap-ui.js` and `assets/scroll-elephant.js` are the active presentation files. Fonts are served locally; their Open Font Licenses are under `assets/fonts/`. Source skills are loaded only when requested; PDFs are opened through links.
 
 ## Verify preservation
 
@@ -28,7 +28,8 @@ The optional developer verifier uses Python and Beautiful Soup:
 
 ```powershell
 python tools/verify_portfolio.py
-node --check assets/portfolio.js
+node --check assets/roadmap-ui.js
+node --check assets/scroll-elephant.js
 git diff --check
 ```
 

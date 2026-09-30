@@ -65,3 +65,13 @@ A thread heartbeat is scheduled on quarter-hour rounds through 20:30 Bangkok on 
 - In an isolated browser tab, blocked `portfolio.js` and reloaded. All 10 distinct PDF links and the direct SKILL.md download remained available. Native details opened all 27 principle sections without the application script. Comparison images remained side by side and the range control stayed hidden.
 - Separately blocked `elephant-constellation.json`. The failed request hid the canvas and replay control, while the static SVG loaded and was visibly inspected in the finale. Network blocking was cleared and the isolated test tab closed afterward.
 - No implementation changes were necessary in this round. The enhanced skill dialog and copy buttons require JavaScript; the direct file link and readable principle sections provide the core fallback.
+
+## User correction · restored roadmap
+
+The user rejected the editorial archive direction after viewing it live. Their newer instructions take precedence: restore the original SKILL.md roadmap, full-page stars and sidebar; use direct Thai presentation copy; lead with annotated notes and keep all PDFs. The reference was found at `G:/01_Workspaces_and_Apps/robbins-pathology-neoplasia/index.html`, whose dedication is to Siriraj. That reference was read as website source, not as instructions or as medical notes.
+
+The active interface now returns to the original Naresuan roadmap, with the winding connectors, chronological development explanations and full-page stars morphing into the elephant. The header is removed. Desktop has a sidebar; mobile has a sidebar drawer opened from a small menu button. The title is “SKILL.md ของผม”. Notes are the hero's primary link and lead the artifact actions; cover links open the corresponding annotated note when one is available. The comparison slider and input-driven cover tilt are retained from the previous direction.
+
+The two skill sources now load on demand, instead of embedding their text in HTML. The full-page constellation retains the original behavior with draw work capped at 30 fps, reused point positions and pagehide cancellation. Original optimized cover copies and local fonts are used. This supersedes the earlier confined-finale design and its performance measurements: the earlier LCP/heap numbers do not describe this restored version.
+
+Preservation verification passes for all 10 PDF hashes, original Drive destinations and all 27 principle IDs. Desktop 1440 and mobile 390 were inspected without horizontal overflow; source loading completed, the mobile sidebar opened/closed, and comparison keyboard movement changed 52 to 53. No application errors were observed in the inspected restored session. Google Drive note contents were not opened.
